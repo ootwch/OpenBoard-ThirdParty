@@ -56,10 +56,10 @@ win32 {
     INCLUDEPATH += "$$XPDF_DIR/goo"
     INCLUDEPATH += "$$XPDF_DIR/splash"
 
-    LIBS += -L$$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.0.2-win64/lib/ -llibeay32
-    LIBS += -L$$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.0.2-win64/lib/ -lssleay32
-    INCLUDEPATH += $$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.0.2-win64/include
-    DEPENDPATH += $$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.0.2-win64/include
+    LIBS += -L$$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.1.0-win64/lib/ -llibcrypto
+    LIBS += -L$$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.1.0-win64/lib/ -llibssl
+    INCLUDEPATH += $$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.1.0-win64/include
+    DEPENDPATH += $$PWD/../OpenBoard-ThirdParty/openssl/openssl-1.1.0-win64/include
 
     LIBS += -L$$PWD/../OpenBoard-ThirdParty/ffmpeg/lib/ -lavformat -lavcodec -lswscale  -lswresample -lavutil -lfreetype
 
