@@ -22,3 +22,5 @@ xpdf/xpdf-3.04/*/Makefile
 
 
 *.swp
+*.pro.user
+.qmake.stash
