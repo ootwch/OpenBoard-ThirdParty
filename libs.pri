@@ -47,6 +47,7 @@ win32 {
     # no INCLUDEPATH, freetype is not used directly
 
     QUAZIP_DIR   = "$$PWD/quazip"
+    include($$QUAZIP_DIR/quazip.pri)
     LIBS        += "-L$$QUAZIP_DIR/lib/$$SUB_LIB" "-lquazip"
     INCLUDEPATH += "$$PWD/zlib/1.2.11/include"
 
